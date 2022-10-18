@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "LaBelleAurore";
-  src: url("../assets/LaBelleAurore.woff");
-}
-
 html,
 body {
   padding: 0;
