@@ -1,0 +1,37 @@
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+}
+
+.text-animate-hover:hover {
+  animation: rubberBand 1s;
+}
+
+/* @for $i from 1 through 35 {
+  .text-animate._#{$i} {
+    animation-delay: #{calc($i / 10)}s;
+  }
+} */
+
+@keyframes bounceIn {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

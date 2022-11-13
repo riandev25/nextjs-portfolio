@@ -1,0 +1,67 @@
+.monitor-screen {
+  width: 500px;
+  height: 280px;
+  margin: auto;
+  overflow: hidden;
+  border: 20px solid #333;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  background-image: url('https://preview.ibb.co/bwnECG/Boldy_Barefoot.png');
+  background-position: top center;
+  transition: 4s linear;
+}
+
+.monitor-screen:hover {
+  background-position: bottom center;
+}
+
+.monitor-screen-bottom {
+  width: 540px;
+  height: 40px;
+  margin: auto;
+  background: #e4e4e4;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+
+.monitor-screen-bottom img {
+  max-width: 20px;
+  position: absolute;
+  top: 8px;
+  left: 255px;
+}
+
+.monitor-stand {
+  width: 100px;
+  height: 50px;
+  background: #bab9ba;
+  margin: auto;
+}
+
+.monitor-stand::before,
+.monitor-stand::after {
+  content: '';
+  background: #bab9ba;
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: relative;
+}
+
+.monitor-stand::before {
+  left: 55%;
+  transform: skewX(10deg);
+}
+
+.monitor-stand::after {
+  top: -50px;
+  right: 5%;
+  transform: skewX(-10deg);
+}
+
+.monitor-base {
+  width: 200px;
+  height: 20px;
+  background: #d3d3d3;
+  margin: auto;
+}
