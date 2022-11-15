@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: monospace, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image-filter {
+  /* filter: invert(93%) sepia(19%) saturate(586%) hue-rotate(121deg)
+    brightness(102%) contrast(97%); */
+  filter: invert(93%) sepia(69%) saturate(347%) hue-rotate(120deg)
+    brightness(104%) contrast(97%);
+  opacity: 0.3;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.image-filter:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.project-filter {
+  filter: invert(11%) sepia(32%) saturate(825%) hue-rotate(176def)
+    brightness(86%) contrast(87%);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

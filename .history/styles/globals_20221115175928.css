@@ -1,0 +1,72 @@
+:root {
+  --primary: rgb(55, 65, 81);
+  --secondary: #b2fcfb;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px none var(--primary);
+  border-style: none;
+}
+
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: monospace, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image-filter {
+  filter: invert(93%) sepia(69%) saturate(347%) hue-rotate(120deg)
+    brightness(104%) contrast(97%);
+  opacity: 0.3;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.image-filter:hover {
+  filter: none;
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
