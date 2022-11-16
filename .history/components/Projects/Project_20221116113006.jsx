@@ -3,7 +3,7 @@ import SmallScreen from './SmallScreen';
 import LargeScreen from './LargeScreen';
 import { useScrollAnimate } from '../../lib/hooks/useScrollAnimate';
 
-const Project = ({ dir, title, description, tech, links, image }) => {
+const Project = ({ dir, title, description, tech, links, image, alt }) => {
   const { animate, animationHandler } = useScrollAnimate();
   return (
     <div
@@ -18,7 +18,7 @@ const Project = ({ dir, title, description, tech, links, image }) => {
       <section
         className={`${
           dir === 'ltr' && 'order-last'
-        } hidden relative z-10 w-[32rem] aspect-[16/10] flex-auto hover: md:flex image-filter`}
+        } hidden relative z-10 w-[32rem] aspect-[16/10] flex-auto md:flex image-filter`}
       >
         <Image
           src={image}

@@ -77,11 +77,11 @@ const Technologies = () => {
       <div
         className={`relative ${
           animate ? 'animate-scroll_left delay-200 visible' : 'invisible'
-        } flex flex-row justify-center max-w-4xl`}
+        } flex flex-row justify-center items-center max-w-4xl`}
       >
-        <section className='hidden sticky md:flex flex-col w-[28%]'>
+        <section className='hidden md:flex flex-col w-[28%]'>
           <h2 className='z-50 px-3 text-lg'>Front-end</h2>
-          <span className='h-0.5 bg-white'></span>
+          <span className='h-0.5 bg-white sticky'></span>
         </section>
         <section className='z-40 group relative flex flex-col bg-white shadow-lg border-2 border-[#b2fcfb] w-full md:w-8/12 p-7 gap-8 rounded-lg image-filter'>
           <Parallax onEnter={animationHandler}>

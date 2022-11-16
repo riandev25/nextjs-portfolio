@@ -41,12 +41,12 @@ export const Portfolio = () => {
     {
       id: 1,
       icon: faSquareArrowUpRight,
-      link: 'https://rianmiguelengracia.vercel.app/',
+      link: 'https://riandev25.github.io/js-weather-app/dist/',
     },
     {
       id: 2,
       icon: faGithubAlt,
-      link: 'https://github.com/riandev25/nextjs-portfolio',
+      link: 'https://github.com/riandev25/js-weather-app',
     },
   ];
   const PORTFOLIO_IMAGE = PortfolioImage;

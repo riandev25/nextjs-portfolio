@@ -36,17 +36,17 @@ export const Portfolio = () => {
   const PORTFOLIO_TITLE = 'My Portfolio Website';
   const PORTFOLIO_DESCRIPTION =
     'I have built my portfolio website to showcase my projects and also to practice responsive web design and CSS animations. Soon will be converted to TypeScript.';
-  const PORTFOLIO_TECH = ['ReactJS, NextJS, Tailwind, Parallax Web Design'];
+  const PORTFOLIO_TECH = ['Parallax Web Design, NextJS, ReactJS'];
   const PORTFOLIO_LINKS = [
     {
       id: 1,
       icon: faSquareArrowUpRight,
-      link: 'https://rianmiguelengracia.vercel.app/',
+      link: 'https://riandev25.github.io/js-weather-app/dist/',
     },
     {
       id: 2,
       icon: faGithubAlt,
-      link: 'https://github.com/riandev25/nextjs-portfolio',
+      link: 'https://github.com/riandev25/js-weather-app',
     },
   ];
   const PORTFOLIO_IMAGE = PortfolioImage;

@@ -40,7 +40,7 @@ const Home = () => {
     >
       <section
         ref={ref}
-        className={` flex flex-col justify-center items-center md:items-start md:w-5/12 gap-5`}
+        className={` flex flex-col justify-center items-center md:items-start md:w-4/12 gap-5`}
       >
         <div className='flex flex-col justify-center items-center gap-2 md:justify-start md:items-start'>
           <h1 className='w-content text-lg sm:text-xl font-thin text-white'>
@@ -78,8 +78,11 @@ const Home = () => {
             );
           })}
         </ul>
+        <div className='mt-8'>
+          <p>Want a tip? Hover on all images for better user experience!</p>
+        </div>
       </section>
-      <section className='hidden md:flex w-[40rem] md:w-[45rem] justify-center items-center'>
+      <section className='hidden md:flex w-[40rem] justify-center items-center'>
         <Image
           src={DevImage}
           alt='dev-image'

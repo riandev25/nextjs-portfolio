@@ -78,6 +78,12 @@ const Home = () => {
             );
           })}
         </ul>
+        <div className='mt-8'>
+          <p className='text-white text-sm w-48'>
+            Want a tip? Hover on components and images for better user
+            experience!
+          </p>
+        </div>
       </section>
       <section className='hidden md:flex w-[40rem] md:w-[45rem] justify-center items-center'>
         <Image

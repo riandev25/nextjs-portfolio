@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/future/image';
-import { Parallax, useParallax } from 'react-scroll-parallax';
-import { useScrollAnimate } from '../../lib/hooks/useScrollAnimate';
+import { useParallax } from 'react-scroll-parallax';
+import styles from './index.module.css';
 import DevImage from '../../assets/images/dev-image.svg';
 import GithubImage from '../../assets/images/github-neon-fill.png';
 import LinkedinImage from '../../assets/images/linkedin-neon-fill.png';
@@ -29,9 +29,33 @@ export const CONTACTS = [
   },
 ];
 
+const nameArray = ['I', '&apos;', 'm', ' ', 'R', 'i', 'a', 'n'];
+const jobArray = [
+  'f',
+  'u',
+  'l',
+  'l',
+  ' ',
+  's',
+  't',
+  'a',
+  'c',
+  'k',
+  ' ',
+  'd',
+  'e',
+  'v',
+  'e',
+  'l',
+  'o',
+  'p',
+  'e',
+  'r',
+];
+
 const Home = () => {
   const { ref } = useParallax({
-    translateY: [-100, 40, 'easeInOut'],
+    translateY: [-100, 30, 'easeInOut'],
   });
   return (
     <header
@@ -40,7 +64,7 @@ const Home = () => {
     >
       <section
         ref={ref}
-        className={` flex flex-col justify-center items-center md:items-start md:w-5/12 gap-5`}
+        className='flex flex-col justify-center items-center md:items-start md:w-4/12 gap-5'
       >
         <div className='flex flex-col justify-center items-center gap-2 md:justify-start md:items-start'>
           <h1 className='w-content text-lg sm:text-xl font-thin text-white'>

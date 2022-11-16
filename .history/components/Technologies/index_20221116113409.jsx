@@ -79,7 +79,7 @@ const Technologies = () => {
           animate ? 'animate-scroll_left delay-200 visible' : 'invisible'
         } flex flex-row justify-center max-w-4xl`}
       >
-        <section className='hidden sticky md:flex flex-col w-[28%]'>
+        <section className='hidden fixed md:flex flex-col w-[28%]'>
           <h2 className='z-50 px-3 text-lg'>Front-end</h2>
           <span className='h-0.5 bg-white'></span>
         </section>

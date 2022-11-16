@@ -8,7 +8,7 @@ export const Weather = () => {
   const WEATHER_TITLE = 'Weather Application';
   const WEATHER_DESCRIPTION =
     'A fully responsive weather application. I built this project using OpenweathermapApi and to enhance my vanilla javascript skills. Open first the location of your device for better user experience';
-  const WEATHER_TECH = ['HTML, CSS, Javascript'];
+  const WEATHER_TECH = ['HTML', 'CSS', 'Javascript'];
   const WEATHER_LINKS = [
     {
       id: 1,
@@ -36,17 +36,17 @@ export const Portfolio = () => {
   const PORTFOLIO_TITLE = 'My Portfolio Website';
   const PORTFOLIO_DESCRIPTION =
     'I have built my portfolio website to showcase my projects and also to practice responsive web design and CSS animations. Soon will be converted to TypeScript.';
-  const PORTFOLIO_TECH = ['ReactJS, NextJS, Tailwind, Parallax Web Design'];
+  const PORTFOLIO_TECH = ['Parallax Web Design, NextJS, ReactJS'];
   const PORTFOLIO_LINKS = [
     {
       id: 1,
       icon: faSquareArrowUpRight,
-      link: 'https://rianmiguelengracia.vercel.app/',
+      link: 'https://riandev25.github.io/js-weather-app/dist/',
     },
     {
       id: 2,
       icon: faGithubAlt,
-      link: 'https://github.com/riandev25/nextjs-portfolio',
+      link: 'https://github.com/riandev25/js-weather-app',
     },
   ];
   const PORTFOLIO_IMAGE = PortfolioImage;
