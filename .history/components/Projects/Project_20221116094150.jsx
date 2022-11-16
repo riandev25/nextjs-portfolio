@@ -23,6 +23,7 @@ const Project = ({ dir, title, description, tech, links, image, alt }) => {
         <Image
           src={image}
           alt={title}
+          fill
           sizes='(max-width: 768px) 100vw, 50vw'
           className='absolute object-cover rounded-lg'
         />

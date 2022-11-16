@@ -82,7 +82,7 @@ const About = () => {
             alt='developer'
             width={300}
             height={300}
-            priority
+            priority={true.toString()}
             sizes='(max-width: 768px) 100vw, 50vw'
           />
           {/* <div className='z-10 absolute top-0 left-0 w-[300px] h-[300px] border-2 border-[#b2fcfb] rounded-md bg-transparent translate-x-3 translate-y-3 ease-in-out transition-duration-300 delay-300 peer-hover:translate-x-2 peer-hover:translate-y-2'></div> */}

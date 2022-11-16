@@ -13,7 +13,7 @@ const SmallScreen = ({ title, description, tech, links, image }) => {
         <Image
           src={image}
           alt='weather-app'
-          sizes='(max-width: 768px) 100vw'
+          sizes='(max-width: 768px) 100vw, 50vw'
           className='absolute object-cover rounded-lg'
         />
       </section>

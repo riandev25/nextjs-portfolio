@@ -5,12 +5,12 @@ import LogoLight from '../../assets/images/logo-light.svg';
 
 const Logo = () => {
   return (
-    <div className='flex items-center relative max-w-[185px] max-h-[55px]'>
+    <div className='flex items-center relative'>
       <Image
         src={LogoImage}
         alt='logo'
-        // width={185}
-        // height={55}
+        width={185}
+        height={55}
         className='hidden md:flex'
         sizes='(max-width: 768px) 15vw'
       />

@@ -5,7 +5,7 @@ import LogoLight from '../../assets/images/logo-light.svg';
 
 const Logo = () => {
   return (
-    <div className='flex items-center relative max-w-[185px] max-h-[55px]'>
+    <div className='flex items-center relative w-80 h-14'>
       <Image
         src={LogoImage}
         alt='logo'

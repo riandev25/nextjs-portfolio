@@ -3,7 +3,7 @@ import SmallScreen from './SmallScreen';
 import LargeScreen from './LargeScreen';
 import { useScrollAnimate } from '../../lib/hooks/useScrollAnimate';
 
-const Project = ({ dir, title, description, tech, links, image, alt }) => {
+const Project = ({ dir, title, description, tech, links, image }) => {
   const { animate, animationHandler } = useScrollAnimate();
   return (
     <div
@@ -22,7 +22,7 @@ const Project = ({ dir, title, description, tech, links, image, alt }) => {
       >
         <Image
           src={image}
-          alt={title}
+          alt='weather-app'
           sizes='(max-width: 768px) 100vw, 50vw'
           className='absolute object-cover rounded-lg'
         />
