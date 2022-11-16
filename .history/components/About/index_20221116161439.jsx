@@ -55,7 +55,7 @@ const About = () => {
                 Here are few technologies I&apos;ve been learning/mastering at
                 the moment:
               </p>
-              <ul className='grid grid-cols-2 sm:grid-cols-5 gap-2'>
+              <ul className='grid grid-cols-span-2 sm:grid-cols-5 gap-2'>
                 {technologies.map((item, i) => {
                   return (
                     <li

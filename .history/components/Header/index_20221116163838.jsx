@@ -37,14 +37,14 @@ const Header = () => {
         </div>
         <Navbar />
         <NavbarLarge />
-        {/* <div
-          className={`z-[48] absolute h-screen w-full bg-black opacity-60 ${
+        <div
+          className={`z-[48] absolute w-full h-screen bg-gray-700 opacity-60 ${
             drawer
               ? 'transition-all opacity-100 duration-500 translate-x-0'
               : 'transition-all delay-200 translate-x-full'
           }`}
           onClick={onDrawerHandler}
-        ></div> */}
+        ></div>
       </div>
     </nav>
   );

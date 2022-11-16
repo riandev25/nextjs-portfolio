@@ -11,6 +11,11 @@ const Layout = ({ children }) => {
   const [drawer, setDrawer] = useState(false);
   const value = useMemo(() => ({ drawer, setDrawer }), [drawer]);
 
+  const { drawer, setDrawer } = useContext(DrawerContext);
+  const onDrawerHandler = () => {
+    setDrawer(!drawer);
+  };
+
   return (
     <DrawerContext.Provider value={value}>
       <div
@@ -22,6 +27,14 @@ const Layout = ({ children }) => {
         <Header />
         <Email />
         {children}
+        <div
+          className={`z-[48] absolute h-screen w-full bg-black opacity-60 ${
+            drawer
+              ? 'transition-all opacity-100 duration-500 translate-x-0'
+              : 'transition-all delay-200 translate-x-full'
+          }`}
+          onClick={onDrawerHandler}
+        ></div>
       </div>
     </DrawerContext.Provider>
   );

@@ -55,13 +55,13 @@ const About = () => {
                 Here are few technologies I&apos;ve been learning/mastering at
                 the moment:
               </p>
-              <ul className='grid grid-cols-2 sm:grid-cols-5 gap-2'>
+              <ul className='grid grid-cols-5 gap-2'>
                 {technologies.map((item, i) => {
                   return (
                     <li
                       key={item}
                       className={`${
-                        (i + 1) % 2 === 0 ? 'sm:col-span-3' : 'sm:col-span-2'
+                        (i + 1) % 2 === 0 ? 'col-span-3' : 'col-span-2'
                       }
                     } flex justify-start items-center gap-2 pl-4`}
                     >
