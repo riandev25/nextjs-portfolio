@@ -13,10 +13,6 @@ const Header = () => {
     setDrawer(!drawer);
   };
 
-  const onCloseHandler = () => {
-    setDrawer(false);
-  };
-
   return (
     <nav className='bg-gray-700 dark:bg-gray-900 fixed w-full z-50 top-0 left-0 border-b shadow-sm border-gray-700 px-6 py-1 md:px-12 md:py-3 dark:border-gray-600'>
       <div className='flex flex-row justify-between items-center w-full'>
@@ -42,12 +38,12 @@ const Header = () => {
         <Navbar />
         <NavbarLarge />
         <div
-          className={`z-[48] fixed h-[2000px] overflow-hidden w-full bg-gray-700 opacity-75 ${
+          className={`z-[48] fixed h-[2000px] overflow-hidden w-full bg-gray-700 opacity-100${
             drawer
               ? 'transition-all opacity-100 duration-500 translate-x-0'
               : 'transition-all delay-200 translate-x-full'
           }`}
-          onClick={onCloseHandler}
+          onClick={onDrawerHandler}
         ></div>
       </div>
     </nav>

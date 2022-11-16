@@ -10,10 +10,6 @@ const Header = () => {
   const { drawer, setDrawer } = useContext(DrawerContext);
 
   const onDrawerHandler = () => {
-    setDrawer(!drawer);
-  };
-
-  const onCloseHandler = () => {
     setDrawer(false);
   };
 
@@ -47,7 +43,7 @@ const Header = () => {
               ? 'transition-all opacity-100 duration-500 translate-x-0'
               : 'transition-all delay-200 translate-x-full'
           }`}
-          onClick={onCloseHandler}
+          onClick={onDrawerHandler}
         ></div>
       </div>
     </nav>

@@ -15,8 +15,8 @@ const PageHeader = ({ title }) => {
           {title}
         </h1>
         <span
-          className={`absolute top-1/2 ${
-            title === 'Technologies' ? 'w-56' : 'w-48'
+          className={`absolute top-1/2 w-${
+            title === 'Technologies' ? '48' : '48'
           } h-0.5 bg-white animated-neon_bg sm:w-72`}
         ></span>
       </div>
