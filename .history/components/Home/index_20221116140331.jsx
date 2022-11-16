@@ -41,7 +41,7 @@ const Home = () => {
       id='Home'
       className={`flex flex-col justify-center items-center max-w-full h-screen bg-bg_gear_image bg-fixed bg-repeat px-6 sm:px-12 lg:px-24 md:flex-row`}
     >
-      <Parallax onEnter={animationHandler} translateY={[-100, 40, 'easeInOut']}>
+      <Parallax onEnter={animationHandler} translateY={[-50, 40, 'easeInOut']}>
         <section
           className={`${
             animate ? 'animate-scroll_left delay-200 visible' : 'invisible'
