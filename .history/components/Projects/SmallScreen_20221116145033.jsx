@@ -49,7 +49,7 @@ const SmallScreen = ({ title, description, tech, links, image }) => {
                       icon={item.icon}
                       className={`text-white w-${item.id === '2' ? '6' : '5'}`}
                     />
-                  </a>                 
+                  </a>
                 </Link>
               </li>
             );

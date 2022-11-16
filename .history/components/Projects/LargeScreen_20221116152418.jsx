@@ -41,7 +41,7 @@ const LargeScreen = ({
               className='group relative flex flex-col overflow-visible'
             >
               <Link href={item.link} legacyBehavior>
-                <a target='_blank'>
+                <a>
                   <FontAwesomeIcon
                     icon={item.icon}
                     className={`peer text-white w-${
@@ -54,10 +54,10 @@ const LargeScreen = ({
                 className={`hidden absolute top-0 ${
                   dir === 'rtl' ? 'right' : 'left'
                 }-0 bg-white translate-y-${
-                  i === 0 ? '6' : '6'
-                } transition-all text-gray-800 p-0.5 rounded-sm text-xs group-hover:flex`}
+                  i === 0 ? '8' : '8'
+                } text-gray-800 p-0.5 rounded-sm text-xs group-hover:flex`}
               >
-                {i === 0 ? 'live' : 'source code'}
+                {i === 0 ? 'live' : 'github'}
               </span>
             </li>
           );

@@ -68,7 +68,7 @@ const Home = () => {
                   key={item.id}
                 >
                   <Link href={item.link} legacyBehavior>
-                    <a className='' target='_blank'>
+                    <a className=''>
                       <Image
                         className=''
                         src={item.imgSrc}

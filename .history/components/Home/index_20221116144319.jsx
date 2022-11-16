@@ -45,7 +45,7 @@ const Home = () => {
         <section
           className={`${
             animate ? 'animate-scroll_left delay-200 visible' : 'invisible'
-          } flex flex-col justify-center items-center md:items-start md:max-w-4/12 gap-5`}
+          } flex flex-col justify-center items-center md:items-start md:w-5/12 gap-5`}
         >
           <div className='flex flex-col justify-center items-center gap-2 md:justify-start md:items-start'>
             <h1 className='w-content text-lg sm:text-xl font-thin text-white'>
@@ -68,7 +68,7 @@ const Home = () => {
                   key={item.id}
                 >
                   <Link href={item.link} legacyBehavior>
-                    <a className='' target='_blank'>
+                    <a className=''>
                       <Image
                         className=''
                         src={item.imgSrc}

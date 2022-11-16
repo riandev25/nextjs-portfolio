@@ -63,7 +63,7 @@ const Navbar = () => {
           })}
           <button
             type='button'
-            className='flex bg-transparent text-[#b2fcfb] border border-[#b2fcfb] hover:bg-[#b2fcfb] hover:opacity-40 transition-all font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+            className='flex bg-transparent text-[#b2fcfb] border border-[#b2fcfb] hover:bg-[#b2fcfb] hover:opacity-40 transition-all font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
           >
             Resume
           </button>

@@ -39,7 +39,7 @@ const TechStack = ({ tech, title }) => {
                 </figure>
 
                 <div className='py-3 pl-2'>
-                  <span className='col-span-2 text-xs sm:text-sm text-white my-2 md:text-base'>
+                  <span className='col-span-2 text-xs text-white my-2 md:text-base'>
                     {item.id}
                   </span>
                 </div>

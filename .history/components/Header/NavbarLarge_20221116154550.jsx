@@ -56,6 +56,8 @@ const NavbarLarge = () => {
                     href={`#${item.id}`}
                     className={`${
                       animate ? `animate-scroll_top  visible ` : 'invisible'
+                    } delay-${
+                      item.delay
                     } block py-2 px-1 md:text-base font-extralight text-white `}
                     aria-current={item.id}
                   >

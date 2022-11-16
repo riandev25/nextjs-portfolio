@@ -12,7 +12,7 @@ const Logo = () => {
       <a
         href='#Home'
         className={`${
-          animate ? 'animate-scroll_top delay-200 visible' : 'invisible'
+          animate ? 'animate-scroll_bottom delay-200 visible' : 'invisible'
         } flex items-center relative max-w-[185px] max-h-[55px]`}
       >
         <Image

@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div
       id='About'
-      className='relative w-full min-h-screen flex flex-col gap-11 justify-center items-center text-white px-8 pb-12 sm:px-12 lg:px-24 bg-bg_chip_image bg-fixed'
+      className='relative pt-4 w-full min-h-screen flex flex-col gap-11 justify-center items-center text-white px-8 pb-12 sm:px-12 lg:px-24 bg-bg_chip_image bg-fixed'
     >
       <PageHeader title='About me' />
       <div
@@ -74,11 +74,11 @@ const About = () => {
             </div>
           </section>
         </Parallax>
-        <figure className='relative'>
+        <section className='relative'>
           {/* <div className='z-20 absolute w-[295px] h-[295px] bg-gray-700'></div> */}
           <Parallax translateY={[0, 50, 'easeInOut']}>
             <Image
-              className='z-30 hidden relative peer border-2 rounded-md bg-[#b2fcfb] image-filter md:flex'
+              className='z-30 relative peer border-2 rounded-md bg-[#b2fcfb] image-filter'
               src={ProgrammerImage}
               alt='developer'
               width={300}
@@ -87,17 +87,8 @@ const About = () => {
               sizes='(max-width: 768px) 100vw, 50vw'
             />
           </Parallax>
-          <Image
-            className='z-30 flex relative peer border-2 rounded-md bg-[#b2fcfb] image-filter md:hidden '
-            src={ProgrammerImage}
-            alt='developer'
-            width={300}
-            height={300}
-            priority
-            sizes='(max-width: 768px) 100vw, 50vw'
-          />
           {/* <div className='z-10 absolute top-0 left-0 w-[300px] h-[300px] border-2 border-[#b2fcfb] rounded-md bg-transparent translate-x-3 translate-y-3 ease-in-out transition-duration-300 delay-300 peer-hover:translate-x-2 peer-hover:translate-y-2'></div> */}
-        </figure>
+        </section>
       </div>
     </div>
   );

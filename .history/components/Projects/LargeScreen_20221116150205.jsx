@@ -34,14 +34,11 @@ const LargeScreen = ({
         })}
       </ul>
       <ul className='flex flex-row gap-6'>
-        {links.map((item, i) => {
+        {links.map((item) => {
           return (
-            <li
-              key={item.id}
-              className='group relative flex flex-col overflow-visible'
-            >
+            <li key={item.id} className='relative flex flex-col'>
               <Link href={item.link} legacyBehavior>
-                <a target='_blank'>
+                <a>
                   <FontAwesomeIcon
                     icon={item.icon}
                     className={`peer text-white w-${
@@ -49,16 +46,8 @@ const LargeScreen = ({
                     }`}
                   />
                 </a>
+                <span className='absolute bottom-0 translate-x-px text-black bg-white text-xs peer-hover:'></span>
               </Link>
-              <span
-                className={`hidden absolute top-0 ${
-                  dir === 'rtl' ? 'right' : 'left'
-                }-0 bg-white translate-y-${
-                  i === 0 ? '6' : '6'
-                } transition-all text-gray-800 p-0.5 rounded-sm text-xs group-hover:flex`}
-              >
-                {i === 0 ? 'live' : 'source code'}
-              </span>
             </li>
           );
         })}

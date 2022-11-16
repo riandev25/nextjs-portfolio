@@ -41,7 +41,7 @@ const LargeScreen = ({
               className='group relative flex flex-col overflow-visible'
             >
               <Link href={item.link} legacyBehavior>
-                <a target='_blank'>
+                <a>
                   <FontAwesomeIcon
                     icon={item.icon}
                     className={`peer text-white w-${

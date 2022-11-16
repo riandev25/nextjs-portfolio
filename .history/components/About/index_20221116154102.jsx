@@ -25,7 +25,7 @@ const About = () => {
   return (
     <div
       id='About'
-      className='relative w-full min-h-screen flex flex-col gap-11 justify-center items-center text-white px-8 pb-12 sm:px-12 lg:px-24 bg-bg_chip_image bg-fixed'
+      className='relative pt-4 w-full min-h-screen flex flex-col gap-11 justify-center items-center text-white px-8 pb-12 sm:px-12 lg:px-24 bg-bg_chip_image bg-fixed'
     >
       <PageHeader title='About me' />
       <div

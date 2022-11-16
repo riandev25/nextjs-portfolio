@@ -37,7 +37,7 @@ export const Weather = () => {
 export const Portfolio = () => {
   const PORTFOLIO_TITLE = 'My Portfolio Website';
   const PORTFOLIO_DESCRIPTION =
-    'I have built my portfolio website to showcase my projects and also to practice responsive web design and CSS animations. Soon will be converted to TypeScript';
+    'I have built my portfolio website to showcase my projects and also to practice responsive web design and CSS animations. Soon will be converted to TypeScript.';
   const PORTFOLIO_TECH = ['ReactJS, NextJS, Tailwind, Parallax Web Design'];
   const PORTFOLIO_LINKS = [
     {
@@ -67,7 +67,7 @@ export const Portfolio = () => {
 export const Sms = () => {
   const SMS_TITLE = 'School Management System';
   const SMS_DESCRIPTION =
-    'A full stack web application school management system. Working: CRUD and Dashboard. Not yet implemented: Authentication, Email and Payment System. This personal project will be deployed soon';
+    'A full stack web application school management system. Working: CRUD and Dashboard. Not yet implemented: Authentication, Email and Payment System. This personal project will be deployed soon.';
   const SMS_TECH = [
     'ReactJS, NextJS, Tailwind, RTK Query, MongoDB, Responsive',
   ];
