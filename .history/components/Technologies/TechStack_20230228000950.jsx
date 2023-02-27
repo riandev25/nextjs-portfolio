@@ -17,7 +17,7 @@ const TechStack = ({ tech, title }) => {
               >
                 <figure
                   className={`flex justify-center items-center rounded-l-lg ${
-                    item.id === 'AWS' && 'px-1 sm:px-4'
+                    item.id === 'AWS' && 'sm:px-4'
                   } bg-gray-600`}
                 >
                   {item.id === 'Tailwind' ||
@@ -61,7 +61,7 @@ const TechStack = ({ tech, title }) => {
                 </figure>
 
                 <div className='py-3 pl-2'>
-                  <span className='col-span-2 text-xs xs:text-sm text-white my-2 md:text-base'>
+                  <span className='col-span-2 text-xs sm:text-sm text-white my-2 md:text-base'>
                     {item.id}
                   </span>
                 </div>

@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '480px',
+      },
       fontFamily: {
         labelle: ['LaBelleAurore', 'cursive'],
       },
@@ -42,8 +45,16 @@ module.exports = {
           '0%': { transform: 'translateX(-4rem)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        scroll_right: {
+          '0%': { transform: 'translateX(4rem)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
         scroll_bottom: {
           '0%': { transform: 'translateY(4rem)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scroll_top: {
+          '0%': { transform: 'translateY(-2rem)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
@@ -51,7 +62,9 @@ module.exports = {
         neon_text: 'neon_text 2s ease-in-out infinite',
         scroll_page_header: 'scroll_page_header 1s ease-in-out',
         scroll_left: 'scroll_left 1s ease-in-out',
+        scroll_right: 'scroll_right 1s ease-in-out',
         scroll_bottom: 'scroll_bottom 1s ease-in-out',
+        scroll_top: 'scroll_top 0.7s ease-in-out',
       },
     },
   },
