@@ -115,7 +115,7 @@ const Technologies = () => {
           <h2 className='z-50 px-3 text-lg'>Frontend</h2>
           <span className='h-0.5 bg-white'></span>
         </section> */}
-        <section className='z-40 group relative flex flex-col bg-white shadow-md shadow-[#b2fcfb] border-2 border-[#b2fcfb] w-full md:w-8/12 px-4 py-7 sm:p-7 gap-8 rounded-lg image-filter'>
+        <section className='z-40 group relative flex flex-col bg-white shadow-md shadow-[#b2fcfb] border-2 border-[#b2fcfb] w-full md:w-8/12 p-4 sm:p-7 gap-8 rounded-lg image-filter'>
           <Parallax onEnter={animationHandler}>
             <TechStack
               tech={PROGRAMMING_LANGUAGE}
