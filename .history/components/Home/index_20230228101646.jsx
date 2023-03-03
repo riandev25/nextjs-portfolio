@@ -41,11 +41,15 @@ const Home = () => {
       id='Home'
       className={`flex flex-col justify-center items-center max-w-full h-screen bg-bg_gear_image bg-fixed bg-repeat px-6 sm:px-12 lg:px-24 md:flex-row`}
     >
-      <Parallax onEnter={animationHandler} translateY={[-100, 40, 'easeInOut']}>
+      <Parallax
+        config={{ delay: 1 }}
+        onEnter={animationHandler}
+        translateY={[-100, 40, 'easeInOut']}
+      >
         <section
           className={`${
             animate ? 'animate-scroll_left delay-200 visible' : 'invisible'
-          } flex flex-col justify-center items-center md:items-start md:w-5/12 gap-5`}
+          } flex flex-col justify-center items-center md:items-start md:max-w-4/12 gap-5`}
         >
           <div className='flex flex-col justify-center items-center gap-2 md:justify-start md:items-start'>
             <h1 className='w-content text-lg sm:text-xl font-thin text-white'>
@@ -55,8 +59,8 @@ const Home = () => {
               I&apos;m Rian Miguel
             </h1>
             <h1 className='text-base font-bold text-white sm:text-xl'>
-              <span className='text-base font-thin sm:text-xl'>a</span> Frontend
-              Developer
+              <span className='text-base font-thin sm:text-xl'>a</span> Full
+              Stack Developer
             </h1>
           </div>
           <ul className='flex flex-row items-start gap-4'>
@@ -68,7 +72,7 @@ const Home = () => {
                   key={item.id}
                 >
                   <Link href={item.link} legacyBehavior>
-                    <a className=''>
+                    <a className='' target='_blank'>
                       <Image
                         className=''
                         src={item.imgSrc}
