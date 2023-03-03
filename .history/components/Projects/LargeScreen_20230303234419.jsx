@@ -19,10 +19,12 @@ const LargeScreen = ({
         <h2 className='text-neon text-right'>Featured Project</h2>
         <h1 className='text-xl font-bold text-right'>{title}</h1>
       </div>
-      <div className={`flex bg-gray-800 p-5 rounded-sm w-[32rem] lg:w-[40rem]`}>
+      <div
+        className={`flex bg-gray-800 p-5 h-28 rounded-sm w-[32rem] lg:w-[40rem]`}
+      >
         <Parallax onChange={animationHandler}>
           <p
-            className={`text-base font-extralight max-h-32 overflow-y-scroll leading-6`}
+            className={`text-base font-extralight overflow-y-scroll leading-6`}
           >
             {description}
           </p>

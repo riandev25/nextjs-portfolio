@@ -22,7 +22,7 @@ const LargeScreen = ({
       <div className={`flex bg-gray-800 p-5 rounded-sm w-[32rem] lg:w-[40rem]`}>
         <Parallax onChange={animationHandler}>
           <p
-            className={`text-base font-extralight max-h-32 overflow-y-scroll leading-6`}
+            className={`text-base font-extralight h-24 overflow-y-scroll leading-6`}
           >
             {description}
           </p>

@@ -75,7 +75,7 @@ export const PROJECT_DATA = [
   {
     title: 'Weather Application',
     description:
-      'The weather application I developed is fully responsive and uses the Openweathermap API to retrieve precise weather data. I employed vanilla JavaScript to strengthen my understanding of the language. The inclusion of location-based services further enhances the user experience, making it even more convenient for users to access weather information.',
+      'The weather application I developed is fully responsive and utilizes the OpenweathermapApi to provide accurate weather data. I utilized vanilla JavaScript to enhance my development skills, and incorporated location-based services to improve the user experience.',
     tech: ['HTML, CSS, Javascript'],
     links: [
       {
