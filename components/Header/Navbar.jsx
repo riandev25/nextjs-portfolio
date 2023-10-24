@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { DrawerContext } from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 const Navbar = () => {
   const { drawer, setDrawer } = useContext(DrawerContext);
@@ -64,12 +65,21 @@ const Navbar = () => {
               </li>
             );
           })}
-          <button
+          {/* <button
             type='button'
             className='flex bg-transparent text-[#b2fcfb] hover:text-[#1F2937] border border-[#b2fcfb] hover:bg-[#b2fcfb] hover:opacity-40 transition-all font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
           >
             Resume
-          </button>
+          </button> */}
+          <Link
+            href='/RESUME_RIAN_MIGUEL_V_ENGRACIA.pdf'
+            lassName='flex bg-transparent text-[#b2fcfb] hover:text-[#1F2937] border border-[#b2fcfb] hover:bg-[#b2fcfb] hover:opacity-40 transition-all font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+            passHref
+          >
+            <a target='_blank' rel='noopener noreferrer'>
+              Resume
+            </a>
+          </Link>
         </ul>
       </div>
     </div>
