@@ -9,7 +9,9 @@ import {
   faNodeJs,
   faGitSquare,
   faGithub,
+  faPython,
 } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import TailwindImage from '../../assets/images/tech/tailwind.svg';
 import NextjsImage from '../../assets/images/tech/nextjs.svg';
 import MongodbImage from '../../assets/images/tech/mongodb.svg';
@@ -21,6 +23,7 @@ import ReactQueryImage from '../../assets/images/tech/react-query.svg';
 import PostmanImage from '../../assets/images/tech/postman.svg';
 import AwsImage from '../../assets/images/tech/aws.svg';
 import RemixImage from '../../assets/images/tech/remix.svg';
+import FirebaseImage from '../../assets/images/tech/firebase.svg';
 
 import TechStack from './TechStack';
 import { Parallax } from 'react-scroll-parallax';
@@ -33,6 +36,7 @@ const techArray = () => {
       icon: faJsSquare,
     },
     { id: 'TypeScript', icon: TypescriptImage },
+    { id: 'Python', icon: faPython },
   ];
 
   const FRONTEND = [
@@ -68,12 +72,25 @@ const techArray = () => {
       id: 'NextJS',
       icon: NextjsImage,
     },
+    {
+      id: 'Refine',
+      icon: faReact,
+    },
   ];
   const BACKEND = [
     { id: 'NodeJS', icon: faNodeJs },
     { id: 'ExpressJS', icon: ExpressjsImage },
     { id: 'MongoDB', icon: MongodbImage },
+    { id: 'Firebase', icon: FirebaseImage },
+    { id: 'SQL', icon: faDatabase },
   ];
+
+  const DEPLOYMENTS = [
+    { id: 'Azure', icon: '' },
+    { id: 'Vercel', icon: '' },
+    { id: 'VS Marketplace', icon: '' },
+  ];
+
   const TOOLS = [
     { id: 'Git', icon: faGitSquare },
     { id: 'Github', icon: faGithub },
@@ -81,17 +98,18 @@ const techArray = () => {
     { id: 'Postman', icon: PostmanImage },
   ];
   const SOON = [
-    { id: 'AWS', icon: AwsImage },
-    { id: 'Remix', icon: RemixImage },
+    // { id: 'AWS', icon: AwsImage },
+    // { id: 'Remix', icon: RemixImage },
     { id: 'R.Native', icon: faReact },
   ];
-  return { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, TOOLS, SOON };
+  return { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, DEPLOYMENTS, TOOLS, SOON };
 };
 
 const TECH_LISTS = [];
 
 const Technologies = () => {
-  const { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, TOOLS, SOON } = techArray();
+  const { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, DEPLOYMENTS, TOOLS, SOON } =
+    techArray();
   const { animate, animationHandler } = useScrollAnimate();
 
   return (
@@ -124,6 +142,7 @@ const Technologies = () => {
           </Parallax>
           <TechStack tech={FRONTEND} title='Frontend' />
           <TechStack tech={BACKEND} title='Backend' />
+          <TechStack tech={DEPLOYMENTS} title='Deployments' />
           <TechStack tech={TOOLS} title='Other Tools' />
           <TechStack tech={SOON} title='Coming Soon' />
         </section>

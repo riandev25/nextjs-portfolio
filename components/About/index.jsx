@@ -11,9 +11,9 @@ const technologies = [
   'React.js',
   'Node.js',
   'Next.js',
-  'Express.js',
+  'Python',
   'Typescript',
-  'MongoDB',
+  'SQL',
 ];
 
 // const scrollAnimation = () => {
@@ -44,11 +44,13 @@ const About = () => {
             <p>
               Years have passed and life led me to a different path and became a
               Mechanical Engineer. My curiosity and eagerness to learn about
-              technology somehow didn&apos;t perish and here I am now pursuing a
-              path to become a{' '}
+              technology somehow didn&apos;t perish and now working as a{' '}
               <span className='text-[neon-green] no-underline decoration-[neon-green] underline-offset-4 decoration-2 hover:underline'>
                 developer.
               </span>
+            </p>
+            <p>
+              {`When I'm not at the computer, I'm usually playing video games (still at the computer but not tech stuff), basketball, cycling and watching stuff (anime, movies, series etc)`}
             </p>
             <div className='flex flex-col gap-3'>
               <p>
