@@ -18,7 +18,12 @@ const Experience = () => {
           <p>Future Analytics Ltd</p>
         </span>
         <div className='flex flex-col gap-3 pt-3'>
-          <p className='text-2xl'>Full Stack Developer</p>
+          <div>
+            <p className='text-2xl font-semibold text-[#b2fcfb]'>
+              Full Stack Developer
+            </p>
+            <p className='font-light'>March 2023 - Present</p>
+          </div>
           <div className='text-lg flex flex-col gap-2'>
             <span className='flex flex-row items-start gap-4'>
               <FontAwesomeIcon
