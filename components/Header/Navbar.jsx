@@ -71,12 +71,12 @@ const Navbar = () => {
           >
             Resume
           </button> */}
-          <Link
-            href='/RESUME_RIAN_MIGUEL_V_ENGRACIA.pdf'
-            lassName='flex bg-transparent text-[#b2fcfb] hover:text-[#1F2937] border border-[#b2fcfb] hover:bg-[#b2fcfb] hover:opacity-40 transition-all font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
-            passHref
-          >
-            <a target='_blank' rel='noopener noreferrer'>
+          <Link href='/RESUME_RIAN_MIGUEL_V_ENGRACIA.pdf' passHref>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex bg-transparent text-[#b2fcfb] hover:text-[#1F2937] border border-[#b2fcfb] hover:bg-[#b2fcfb] hover:opacity-40 transition-all font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+            >
               Resume
             </a>
           </Link>
