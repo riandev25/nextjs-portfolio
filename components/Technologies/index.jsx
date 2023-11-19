@@ -87,6 +87,7 @@ const techArray = () => {
 
   const TOOLS = [
     { id: 'MS Azure', icon: FirebaseImage },
+    { id: 'CI/CD', icon: FirebaseImage },
     { id: 'Git', icon: faGitSquare },
     { id: 'Github', icon: faGithub },
     { id: 'VSCode', icon: VScodeImage },
@@ -97,14 +98,13 @@ const techArray = () => {
     // { id: 'Remix', icon: RemixImage },
     { id: 'R.Native', icon: faReact },
   ];
-  return { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, DEPLOYMENTS, TOOLS, SOON };
+  return { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, TOOLS, SOON };
 };
 
 const TECH_LISTS = [];
 
 const Technologies = () => {
-  const { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, DEPLOYMENTS, TOOLS, SOON } =
-    techArray();
+  const { PROGRAMMING_LANGUAGE, FRONTEND, BACKEND, TOOLS, SOON } = techArray();
   const { animate, animationHandler } = useScrollAnimate();
 
   return (
