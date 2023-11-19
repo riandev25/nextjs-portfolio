@@ -8,12 +8,12 @@ import { useScrollAnimate } from '../../lib/hooks/useScrollAnimate';
 import { Parallax } from 'react-scroll-parallax';
 
 const technologies = [
-  'React.js',
-  'Node.js',
   'Next.js',
-  'Python',
+  'Node.js',
+  'C#',
+  '.NET',
   'Typescript',
-  'SQL',
+  'PostgreSQL',
 ];
 
 // const scrollAnimation = () => {

@@ -85,13 +85,8 @@ const techArray = () => {
     { id: 'SQL', icon: faDatabase },
   ];
 
-  const DEPLOYMENTS = [
-    { id: 'Azure', icon: '' },
-    { id: 'Vercel', icon: '' },
-    { id: 'VS Marketplace', icon: '' },
-  ];
-
   const TOOLS = [
+    { id: 'MS Azure', icon: FirebaseImage },
     { id: 'Git', icon: faGitSquare },
     { id: 'Github', icon: faGithub },
     { id: 'VSCode', icon: VScodeImage },
@@ -142,7 +137,6 @@ const Technologies = () => {
           </Parallax>
           <TechStack tech={FRONTEND} title='Frontend' />
           <TechStack tech={BACKEND} title='Backend' />
-          <TechStack tech={DEPLOYMENTS} title='Deployments' />
           <TechStack tech={TOOLS} title='Other Tools' />
           <TechStack tech={SOON} title='Coming Soon' />
         </section>
